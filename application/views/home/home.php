@@ -599,7 +599,7 @@
                                                                                         $property_title = @$property->details->factory_BuildupArea.' '.@$property->details->factory_BuildupAreaUnit.' '.$propertyResidential.' On '.$property->rent_sell.' at '.$property->city;
                                                                                     }elseif($residential == 'Flat'){
                                                                                         //Flat Rent
-                                                                                        $property_title = @$property->details->flat_Room.' BHK '.@$property->details->flat_BuildupArea.' '.$property->details->flat_BuildupArea_Unit.' '.$propertyResidential.' On '.$property->rent_sell.' at '.$property->city;
+                                                                                        $property_title = @$property->details->flat_Room.' BHK '.@$property->details->flat_BuildupArea.' '.@$property->details->flat_BuildupArea_Unit.' '.@$propertyResidential.' On '.@$property->rent_sell.' at '.$property->city;
                                                                                     }elseif($residential == 'HouseorBanglow'){
                                                                                         //House Rent
                                                                                         $property_title = @$property->details->house_Room.' BHK '.@$property->details->house_BuildupArea.' '.@$property->details->house_BuildupAreaUnit.' '.$propertyResidential.' On '.$property->rent_sell.' at '.$property->city;
