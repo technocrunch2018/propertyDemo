@@ -1,0 +1,144 @@
+
+  * {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background: #EFEFEF;
+    font-family: "Roboto", sans-serif;
+    background-image: url("");
+    background-repeat: repeat-y;
+    background-size: 100%;
+  }
+  ::selection {
+    background: #ed6950;
+    color: #fff;
+  }
+  ::moz-selection {
+    background: #ed6950;
+    color: #fff;
+  }
+
+  .txt-lg {
+      font-size: 28px;
+      color: #ed6950;
+  }
+
+  .txt-md {
+      font-size: 16px;
+      line-height: 24px;
+  }
+
+  #invoiceholder {
+    width: 100%;
+    height: 100%;
+    padding-top: 50px;
+  }
+  #headerimage {
+    z-index: -1;
+    position: relative;
+    top: -50px;
+    height: 350px;
+    background-color: #dddddd;
+    overflow: hidden;
+    background-attachment: fixed;
+    background-size: 1920px 80%;
+    background-position: 50% -90%;
+  }
+  #invoice {
+    position: relative;
+    top: -290px;
+    margin: 0 auto;
+    width: 75%;
+    background: #fff;
+  }
+
+  [id*="invoice-"] {
+    /* Targets all id with 'col-' */
+    border-bottom: 1px solid #eee;
+    padding: 30px;
+  }
+
+  #invoice-top {
+    min-height: 120px;
+  }
+  #invoice-top img {
+    position: absolute;
+    width: 125px;
+  }
+  #invoice-mid {
+    min-height: 120px;
+  }
+  #invoice-bot {
+    min-height: 250px;
+  }
+  .info {
+    display: block;
+    text-align: center;
+  }
+  .service {
+    border: 1px solid #eee;
+  }
+  .item {
+    width: 50%;
+  }
+  .itemtext {
+    font-size: 0.9em;
+  }
+
+  form {
+    float: right;
+    margin-top: 30px;
+    text-align: right;
+  }
+
+  .effect2 {
+    position: relative;
+  }
+  .effect2:before,
+  .effect2:after {
+    z-index: -1;
+    position: absolute;
+    content: "";
+    bottom: 15px;
+    left: 10px;
+    width: 50%;
+    top: 80%;
+    max-width: 300px;
+    background: #777;
+    -webkit-box-shadow: 0 15px 10px #777;
+    -moz-box-shadow: 0 15px 10px #777;
+    box-shadow: 0 15px 10px #777;
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+  }
+  .effect2:after {
+    -webkit-transform: rotate(3deg);
+    -moz-transform: rotate(3deg);
+    -o-transform: rotate(3deg);
+    -ms-transform: rotate(3deg);
+    transform: rotate(3deg);
+    right: 10px;
+    left: auto;
+  }
+
+  table, th, td {
+    border: 1px solid #EFEFEF;
+    border-collapse: collapse;
+  }
+  th, td {
+    padding: 5px 15px 5px 15px;
+    text-align: left;
+  }
+
+  th {
+    width: 35%;
+    color: #444;
+  }
+  td {
+    width: 65%;
+    color: #555;
+  }

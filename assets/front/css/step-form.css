@@ -1,0 +1,364 @@
+/* ------------------------------------
+26.Multistep Form Start Here 
+---------------------------------------*/
+.multistep-form {
+  overflow: hidden;
+  padding: 100px 0 100px;
+}
+.multistep-form .active {
+  background: #50aeed;
+  color: #ffffff;
+}
+.multistep-form fieldset {
+  display: none;
+  margin: 60px 0 0 0;
+  text-align: center;
+}
+.multistep-form fieldset input {
+  width: 20%;
+  height: 45px;
+  letter-spacing: 1px;
+  border-radius: 4px;
+  border: 1px solid #413b3b;
+}
+.multistep-form fieldset input:outline {
+  border: none;
+  box-shadow: none;
+}
+.multistep-form fieldset input:focus {
+  -webkit-box-shadow: 0px 0px 1px 1px #50aeed;
+  -moz-box-shadow: 0px 0px 1px 1px #50aeed;
+  box-shadow: 0px 0px 1px 1px #50aeed;
+  border: 0px solid #50aeed;
+}
+.multistep-form fieldset input[type="button"] {
+    background: #50aeed;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.5s ease 0s;
+    line-height: 20px;
+    position: relative;
+    box-shadow: 2px 0px 11px -2px #50aeed;
+    border: 1px solid transparent;
+    cursor: pointer;
+    border-radius:4px;
+}
+.multistep-form fieldset input[type="button"]:hover {
+    box-shadow: none;
+    border: 1px solid #50aeed;
+    background: #FFFFFF;
+    color: #50aeed;
+    transition: all ease-in-out 0.4s;
+}
+.multistep-form fieldset input[type="file"] {
+  display: block;
+  margin: auto;
+  padding: 0px;
+}
+.multistep-form fieldset select {
+  width: 50%;
+  height: 45px;
+  border-radius: 0px;
+  border: 1px solid #dddddd;
+  padding: 10px;
+}
+.multistep-form fieldset select:outline {
+  border: none;
+  box-shadow: none;
+}
+.multistep-form fieldset select:focus {
+  -webkit-box-shadow: 0px 0px 1px 1px #50aeed;
+  -moz-box-shadow: 0px 0px 1px 1px #50aeed;
+  box-shadow: 0px 0px 1px 1px #50aeed;
+  border: 0px solid #50aeed;
+}
+.multistep-form fieldset textarea {
+  margin-bottom: 15px;
+  width: 50%;
+  height: 150px;
+  border-radius: 0px;
+  border: 1px solid #dddddd;
+  padding: 10px;
+}
+.multistep-form fieldset textarea:outline {
+  border: none;
+  box-shadow: none;
+}
+.multistep-form fieldset textarea:focus {
+  -webkit-box-shadow: 0px 0px 1px 1px #50aeed;
+  -moz-box-shadow: 0px 0px 1px 1px #50aeed;
+  box-shadow: 0px 0px 1px 1px #50aeed;
+  border: 0px solid #50aeed;
+}
+.multistep-form fieldset ul#preview {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: left;
+  width: 50%;
+  display: inline-block;
+}
+.multistep-form fieldset ul#preview li {
+  display: block;
+  margin-bottom: 10px;
+}
+.multistep-form fieldset ul#preview li img {
+  width: 100%;
+}
+.multistep-form fieldset ul#preview li span {
+  font-weight: 800;
+  color: #000000;
+  margin-right: 15px;
+}
+.multistep-form #first {
+  display: block;
+  margin: 60px 0 0 0;
+  text-align: center;
+}
+.multistep-form #first input[type="button"] {
+  background: #50aeed;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.5s ease 0s;
+  line-height: 20px;
+  position: relative;
+  box-shadow: 2px 0px 11px -2px #50aeed;
+  border: 1px solid transparent;
+  cursor: pointer;
+  border-radius:4px;
+}
+.multistep-form #first input[type="button"]:after {
+  position: absolute;
+  content: "\f105";
+  font-family: fontawesome;
+  right: 0;
+  top: 0;
+  color: #ffffff;
+  margin-right: 30px;
+  font-weight: 600;
+}
+.multistep-form #first input[type="button"]:hover {
+  box-shadow: none;
+  border: 1px solid #50aeed;
+  background: #FFFFFF;
+  color: #50aeed;
+  transition: all ease-in-out 0.4s;
+}
+.multistep-form #first ul#preview {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: left;
+  width: 50%;
+  display: inline-block;
+}
+.multistep-form #first ul#preview li {
+  display: block;
+  margin-bottom: 10px;
+}
+.multistep-form #first ul#preview li span {
+  font-weight: 800;
+  color: #000000;
+  margin-right: 15px;
+}
+.multistep-form ul#progressbar {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+.multistep-form ul#progressbar li {
+  display: inline-block;
+  margin: 0 5px;
+  font-size: 12px;
+  border: 1px solid #ed6950;
+  background: #FFFFFF;
+  color: #ed6950;
+  padding: 5px 10px;
+  transition: all 0.5s ease 0s;
+  border-radius:4px;
+}
+.multistep-form ul#progressbar li:hover {
+  background: #ed6950;
+  color: #ffffff;
+}
+
+.multistep-form ul#progressbar li.active {
+    border: 1px solid #52b449;
+    background: #52b449;
+    color: #FFFFFF;
+}
+
+/*------------------- Start Photo Uploader area-----
+---------------------------------------------------*/
+.user-profile-images .avatar-upload {
+  position: relative;
+  max-width: 200px;
+  margin: 10px auto;
+}
+.user-profile-images .avatar-upload .avatar-edit {
+  position: absolute;
+  right: 10px;
+  z-index: 99;
+  bottom: 10px;
+}
+.user-profile-images .avatar-upload .avatar-edit input {
+  display: none;
+}
+.user-profile-images .avatar-upload .avatar-edit input + label {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  margin-bottom: 0;
+  border-radius: 100%;
+  background: #FFFFFF;
+  border: 1px solid #50aeed;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  font-weight: normal;
+  transition: all .2s ease-in-out;
+}
+.user-profile-images .avatar-upload .avatar-edit input + label:hover {
+  opacity: 0.7;
+  transform: scale(1.1);
+}
+.user-profile-images .avatar-upload .avatar-edit input + label:after {
+  content: "\f040";
+  font-family: 'FontAwesome';
+  color: #50aeed;
+  position: absolute;
+  line-height: 35px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin: auto;
+}
+.user-profile-images .avatar-upload .avatar-preview {
+  width: 160px;
+  height: 160px;
+  overflow:hidden;
+  position: relative;
+  border-radius: 100%;
+  border: 6px solid #f2f2f3;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+.user-profile-images .avatar-upload .avatar-preview > div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  -webkit-transition: all .4s ease-out;
+    -moz-transition: all .4s ease-out;
+    -ms-transition: all .4s ease-out;
+    -o-transition: all .4s ease-out;
+    transition: all .4s ease-out;
+}
+
+.user-profile-images .avatar-upload .avatar-preview > div img:hover {
+    transform: scale(1.05);
+}
+
+/*-------End Upload photo area ---------------------------
+--------------------------------------------------------*/
+
+
+/**
+*
+* -------------------------------------------------
+*
+* Template : Floorma Mantra 
+* Author : nabilCreation
+* Author URI : http://www.nabilcreation.com/
+*
+* --------------------------------------------------
+*
+**/
+
+
+/* Large devices (desktops, 992px and up) */
+
+@media only screen and (min-width:992px) and (max-width: 1199px) {
+    .multistep-form ul#progressbar li {
+        margin: 0 5px;
+        padding: 10px;
+    }
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+
+@media only screen and (min-width:768px) and (max-width: 991px) {
+    .wrap-0 {
+        max-width: 100%
+    }
+    .multistep-form ul#progressbar li {
+        font-size: 13px;
+        margin: 0;
+        padding: 5px 6px;
+        display: block;
+        margin-bottom: 10px;
+    }
+    .multistep-form ul#progressbar li:last-child {
+        margin-bottom: 0;
+    }
+}
+
+
+/* Small devices (landscape phones, less than 768px) */
+
+@media only screen and (max-width: 767px) {
+    .wrap-0 {
+        max-width: 100%
+    }
+    .multistep-form ul#progressbar li {
+        margin:5px;
+        padding: 4px 7px;
+    }
+    .multistep-form fieldset input {
+        width: 75%;
+    }
+    .user-profile-images .avatar-upload .avatar-preview {
+      width: 175px;
+      height: 175px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .wrap-0 {
+        max-width: 100%
+    }
+    .multistep-form ul#progressbar li {
+        margin:5px;
+        padding: 4px 7px;
+    }
+    .multistep-form #first h2 {
+        font-size: 22px;
+    }
+    .multistep-form fieldset ul#preview {
+        width: 100%;
+    }
+}
+
+
+/* Custom, iPhone Retina */
+
+@media only screen and (max-width: 320px) {
+    /* spacing Issues Fixed */
+    .wrap-0 {
+        max-width: 100%
+    }
+    .multistep-form {
+        padding: 50px 0 50px;
+    }
+    .multistep-form ul#progressbar li {
+        margin:5px;
+        padding: 4px 7px;
+    }
+    .multistep-form #first h2 {
+        font-size: 22px;
+    }
+}
